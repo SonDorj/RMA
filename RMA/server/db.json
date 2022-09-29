@@ -1,4 +1,18 @@
 {
-    "users": [
-      ]
+  "users": [
+    {
+      "name": "sonam",
+      "email": "dsonam@gmail.com",
+      "password": "1234",
+      "address": "1234",
+      "id": 4
+    },
+    {
+      "name": "sonam",
+      "email": "qwer",
+      "password": "qwer",
+      "address": "qwer",
+      "id": 8
+    }
+  ]
 }

@@ -1,0 +1,30 @@
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Welcome</h2>
+      </div>
+      <div *ngIf="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>!!!</strong> Email or password incorrect.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="row g-5 ">
+        <div class="col-md-7 col-lg-12">
+          <form >
+            <div class="row g-3">
+              <div class="col-12 form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email"  [(ngModel)]="email">
+              </div>
+              <div class="col-sm-12 form-group">
+                <label>password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="password">
+              </div>
+            </div>
+            <hr class="my-4">
+            <button class="w-100 btn btn-primary btn-lg" type="submit" (click)="signin()">Signin</button>
+            <hr class="my-4">
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
