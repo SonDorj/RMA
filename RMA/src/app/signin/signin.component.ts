@@ -20,8 +20,8 @@ export class SigninComponent implements OnInit {
         return a.email=== this.email && a.password===this.password
       });
       if(user){
-        console.log("ha");
-        this.router.navigate(['home']);
+        console.log("signed in");
+        this.router.navigate(['list']);
       }
       else{
         this.alert=true;
