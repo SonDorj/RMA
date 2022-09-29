@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../java"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web technology"
+	}
+}

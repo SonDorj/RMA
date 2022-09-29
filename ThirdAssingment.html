@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Third Assignment</title>
+</head>
+<style>
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+td{
+    border: 1px solid;
+    height: 50px;
+    width: 130px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+tr>:first-child{
+    padding-left: 10px; 
+    width:10px;
+}
+input[type=text],input[type=search],input[type=mail] {
+    border: none;
+  }
+</style>
+<body>
+<div class="table">
+    <form>
+        <fieldset>
+            <legend>student registration</legend>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" size="20" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date"  required></td>
+                </tr>
+                <tr>
+                    <td>Resume:</td>
+                    <td><input type="file" ></td>
+                </tr>
+                <tr>
+                    <td>Search</td>
+                    <td><input type="search" size='' width="100%" required></td>
+                </tr>
+                <tr>
+                    <td>Mail</td>
+                    <td><input type="mail" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><label>Course</label></td>
+                    <td>    
+                        <select>
+                        <option value="volvo">CSE</option>
+                        <option value="saab">ISE</option>
+                        <option value="fiat">ECE</option>
+                        <option value="audi">ME</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><input type="radio" name="gender"><label>male</label><input type="radio" name="gender"><label>female</label></td>
+                </tr>
+                <tr rowspan="2"><td colspan="2" ><input type="checkbox"><label>Terms and Conditions</label><br><input type="checkbox"><label>Notifications</label></td></tr>
+                <tr>
+                    <td colspan="2";><input type="Submit" value="Submit"  required></td>
+                </tr>
+                
+                
+            </table>
+        </fieldset>
+    </form>
+</div>
